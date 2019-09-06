@@ -2,6 +2,16 @@ import React, { useState, useEffect } from "react";
 import axios from "axios"; 
 import * as  Yup from "yup";
 import { Form, Field, withFormik } from "formik"; 
+import Styled from "styled-components"; 
+
+const Center = Styled.div`
+display: flex;
+justify-content: center; 
+`
+
+const Margin = Styled.div`
+margin: 20px; 
+`
 
 const UserForm = ({errors, touched, values, status}) => {
 
@@ -17,12 +27,17 @@ useEffect(() => {
     return(
     <section> 
     <Form> 
-        <div>
+    <div>
+            <Center> 
             <Field type="text" name="name" placeholder="Name" />
+            </Center> 
             {touched.name && errors.name && (
                 <p className="error"> { errors.name }  </p>
             )}
-            <Field type="password" name="password" placeholder="Password" /> 
+            <Margin> </Margin> 
+            <Center> 
+            <Field type="email" name="email" placeholder="email" />
+            </Center> 
             {touched.password && errors.password && (
                 <p className="error"> { errors.password }  </p>
             )}
@@ -42,17 +57,17 @@ useEffect(() => {
 }
 
 const FormikUserForm = withFormik({
-    mapPropsToValues({name, password}) {
+    mapPropsToValues({name, eamil}) {
         return {
           name: name || "",  
-          password: password || ""  
+          eamil: eamil || ""  
         }
     }, 
 
 
     validationSchema: Yup.object().shape({
         name: Yup.string().required("Input Info Here"), 
-        password: Yup.string().required("Input Info Here")
+        eamil: Yup.string().required("Input Info Here")
     }), 
 
 
