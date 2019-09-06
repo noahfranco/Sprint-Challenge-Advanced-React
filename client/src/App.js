@@ -35,10 +35,8 @@ axiosAPI = () => {
 render() {
   return (
     <div className="App">
-     <h1> Women's World Cup </h1> 
-     <p> Top test </p>
+     <h1> Women's World Cup </h1>  
       <Navbar />
-    <p> Bottom Tes </p>
       { this.state.players.map(player => (
        <PlayerCard player={player} key={player.id} /> 
      ))}

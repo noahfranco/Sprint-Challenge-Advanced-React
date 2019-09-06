@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <nav className={darkMode ? "navbar-dark" : "navbar"}>
-      <h1>Crypto Tracker</h1>
+      <h1> Toggle that Switch to see the Magic </h1>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
