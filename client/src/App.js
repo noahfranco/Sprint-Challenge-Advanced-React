@@ -4,7 +4,6 @@ import axios from "axios";
 import PlayerCard from './components/PlayerCard';
 import Navbar from "./components/NavBar.js"; 
 
-
 class App extends React.Component { 
 constructor() {
   super(); 
@@ -35,8 +34,8 @@ axiosAPI = () => {
 render() {
   return (
     <div className="App">
+    <Navbar />
      <h1> Women's World Cup </h1> 
-     <Navbar /> 
       { this.state.players.map(player => (
        <PlayerCard player={player} key={player.id} /> 
      ))}
