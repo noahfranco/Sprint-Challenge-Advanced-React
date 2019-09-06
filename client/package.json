@@ -5,10 +5,12 @@
   "dependencies": {
     "@testing-library/react": "^9.1.4",
     "axios": "^0.19.0",
+    "formik": "^1.5.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "yup": "^0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",

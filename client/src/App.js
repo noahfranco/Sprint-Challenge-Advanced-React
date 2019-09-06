@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from "axios"; 
 import PlayerCard from './components/PlayerCard';
+import UserForm from "./components/UserForm.js"; 
 
 class App extends React.Component { 
 constructor() {
@@ -34,6 +35,7 @@ render() {
   return (
     <div className="App">
      <h1> Women's World Cup </h1> 
+     <UserForm /> 
       { this.state.players.map(player => (
        <PlayerCard player={player} key={player.id} /> 
      ))}
