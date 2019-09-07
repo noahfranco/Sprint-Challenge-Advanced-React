@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/react": "^9.1.4",
+    "axios": "^0.19.0",
+    "formik": "^1.5.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "sass": "^1.23.0-module.beta.1",
+    "scss": "^0.2.4",
+    "styled-components": "^4.3.2",
+    "yup": "^0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",
