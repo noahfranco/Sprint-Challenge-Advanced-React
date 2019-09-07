@@ -10,7 +10,6 @@ it('renders without crashing', () => {
 
 });
 
-
 it("renders h1 tag", () => {
   render("Women's World Cup")
 })
