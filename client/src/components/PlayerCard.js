@@ -5,6 +5,7 @@ import React from "react";
 
     return(
         <>
+        <h2> 2019 Player </h2>
         <div> Name: { props.player.name } </div>
         <div> Country: { props.player.country } </div>
         </> 
